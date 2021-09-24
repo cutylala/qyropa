@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+section,nav,article ,header{
+	width:100% ;
+	}
+
+/* 一般大小Colum------------------------------------------------------*/
+
+.colum{
+	width:98%;
+	height:100% ;
+	margin:86px auto;
+	/*background:url(../../images/colum-bg.jpg) repeat-y #FFF  ;*/
+	position:relative ;
+	padding:50px 0 83px 0;	
+	box-sizing:border-box;
+	background:#5fcad6;
+	border-radius:50px ;
+	
+
+	}			
+	  
+	
+/* 藍色colum blue------------------------------------------------------*/	
+.colum-blue{
+	width:98% ;
+	margin:auto;
+	background:#aef0f8 ;
+	border-radius:50px 50px 0 0  ;
+	position:relative ;
+	box-sizing:border-box;
+	overflow:hidden;
+	background:#41bcc4; 
+	position:relative ;
+	}
+	
+
+
+.colum-blue-inner{
+	border-radius:25px  ;
+	background:#cbfcff;
+	position:relative ;
+	margin: 2% auto  ;
+	width:85%;
+	padding:2%;
+	overflow:hidden;
+	font-size:12pt ;
+	line-height:18pt;
+	letter-spacing:.2em;
+	
+		
+	}	
+.colum-blue-inner-img{/*需要用到卷軸的話*/
+	position:relative ;
+	width:90%;
+	height:480px;
+	position:relative;
+	overflow-y:visible;
+	overflow:scroll ;
+	margin:auto ;
+	padding-top:30px;
+
+	}	
+		
+.colum-tail{/*對話框的尾巴*/
+	background:url(../../images/colum-tail.png) no-repeat  ;
+	width:151px ;
+	height:107px ;
+	position:absolute ;
+	bottom:-105px ;
+	left:30%;
+	}
+
+		
+/* 黑板和便條(分兩欄)------------------------------------------------------*/		
+
+.blackboard{
+	width:90%;
+	display:block;
+	margin:auto;
+	background:transparent;
+	overflow:hidden;
+	position:relative;
+	z-index:1;
+	}
+	
+.blackboard-z{ /*套陰影用*/
+	width:100% ;
+	z-index:2;
+	
+	}	
+	
+.blackboard-bg{ /*放射背景*/
+	width:750px ;
+	height:750px;
+	position:absolute ;
+	left:50% ;top:50% ;
+	margin:-355px 0 0 -355px ;
+	background-image:url(../../images/blackboard-bg2.gif);
+	transition-property:background-image ; transform:rotate(349deg); 
+	-webkit-animation:bgrotate 100s infinite ;
+	animation:bgrotate 100s infinite ;
+	animation-timing-function:linea ;
+	z-index:1;
+	background-color:#FFF;
+	}	
+	
+@-webkit-keyframes bgrotate{
+	from{ transform:rotate(0);}
+	100%{ transform:rotate(360deg); }
+	}	
+@keyframes bgrotate{
+	from{ transform:rotate(0);}
+	100%{ transform:rotate(360deg); }
+	}	
+	
+	
+.blackboard-text{
+	text-indent:-9999px ; 
+	background-image:url(../../images/blackboard-text.png);
+	background-repeat:no-repeat ; 
+	width:481px ; 
+	height:276px ;
+	position:relative ;
+	margin:59px auto ; 
+	z-index:3;
+}
+
+.memo{
+	margin:auto;
+	width:90% ;
+	margin:auto;
+	height:auto;
+	font-size:11pt ;
+	line-height:18pt ;
+	font-family:"微軟正黑體", "新細明體-ExtB", "Arial Unicode MS" ;
+	border-radius:0 0 25px 25px ;
+	
+	
+	}
+
+/* 裝飾定位(放在colum-blue上的)------------------------------------------------------*/	
+
+.positionForDec{
+	position:relative ; 
+	width:98%;
+	height:10px;
+	margin:auto ;
+	
+	}
+
+

@@ -1,0 +1,497 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0 ; padding:0 ; list-style-type:none ; text-decoration:none ; }
+.sal{ clear:both ; line-height:50px; text-indent:-9999px ;  }
+
+/* 顏色------------------------------------------------------*/	
+
+.color-red{ color:#EF5A71 ; }
+
+.color-green{ color:#0F0;  }
+
+.color-orange{ color:#FB8857 ; }
+
+.color-blue{ color:#0FF; }
+
+.color-purple{ color:#C6F ; }
+
+.color-wite{ color:#fff ; }
+
+/* 標籤設定------------------------------------------------------*/		
+	
+
+
+a{ color:#0E1833 ; }
+
+body{
+	margin:0;
+	color:#0C1933;
+	font-size:12pt;
+	line-height:16pt;
+	/*background:url(../../images/dec-stars.png)repeat-x  fixed  ;*/
+	background-color: #fff4a4;
+	overflow-x:hidden;
+	}
+	
+select, textarea , input{
+	padding:2px;
+	width:100%;
+	background:#fff ;
+	border-radius:25px;
+	border:0;
+	
+	}	
+	
+.submit{
+	background:#39F ; 
+	width:50px;
+	color:#FFF ;
+	text-shadow: 2px 2px 0px #000, 1px 1px 0px #000, 1px 1px 1px #000,-1px -1px 0px #000,1px -1px 0px #000,-1px 1px 0px #000, 1px 0px 1px #000,0px 1px 1px #000,-1px 0px 1px #000,0px -1px 0px #000;
+
+	
+	}	
+	
+	
+/* 選單設定------------------------------------------------------*/	
+
+#menu_btn { display:none ; }
+
+#menu{
+	width:100% ;
+	z-index:50;
+	top:0;
+	left:0;
+/*	position:fixed ;
+	background:url(../../images/dec-stars.png) 0 30px repeat-x #f4f1c1;
+	opacity:.9;*/
+	}
+	
+#menu #menu-inner{
+	width:80%;
+	height:150px;
+	margin:auto ;
+	position:relative ;
+	
+	}	
+	
+#menu #menu-logo{	
+	margin:auto;
+	width:253px;
+	height:94px;
+
+	}
+#menu #menu-logo #menu-logo-a{
+	display:block ;
+	width:100%;
+	height:100%;	
+	text-indent:-9999px ;
+	background:url(../../images/menu-logo.png) center  no-repeat  ;
+	background-size: 100% 100%;
+	
+	
+	}
+#menu #menu-nav{
+	display:block ;
+	margin:20px auto;
+	text-align:center;
+	}	
+	
+	
+#nav-ul{
+
+	}
+#nav-ul .nav-list{
+	display:inline-block ;
+	background:url(../../images/nav-hover-bg.png) ;
+	background-position:0 0 ;
+	position:relative ;
+	}	
+	
+#nav-ul .nav-list .nav-a{
+	padding:0 19px ;
+	font-size:15pt;
+	letter-spacing:2px;
+	line-height:30px;
+	font-weight:bold ;
+	font-family:"微軟正黑體", "新細明體-ExtB", "Arial Unicode MS" ;
+	text-shadow: 2px 2px 0px #fff, 1px 1px 0px #fff, 1px 1px 1px #fff,-1px -1px 0px #fff,1px -1px 0px #fff,-1px 1px 0px #fff, 1px 0px 1px #fff,0px 1px 1px #fff,-1px 0px 1px #fff,0px -1px 0px #fff;	
+	}
+			
+#nav-ul .nav-list .nav-line{
+	display:inline-block ;
+	background:url(../../images/menu-nav-line.gif) no-repeat  ;
+	width:2px ;
+	height:30px ;
+	vertical-align:middle ;
+	transform:rotate(25deg);
+
+}
+
+#nav-ul .nav-list:nth-child(10){
+	display:none ;
+	}
+
+/* 選單狀態設定---------*/	
+#nav-ul .nav-list:hover{
+	background-position:-165px 0 ;
+	transition:.3s ;
+	}
+#nav-ul .nav-list:hover .nav-a{
+	color:#F03 ;
+	transition-delay:.1s ;
+	}
+	
+
+/* 選單設定over------------------------------------------------------*/	
+
+/* Banner------------------------------------------------------*/	
+
+#banner{
+	margin:auto ;
+	margin-top:80px;
+	width:75%;
+	border-left:6px ;
+	border-right:2px ;
+	border-color:#1D4A77;
+	border-style:solid ;
+	position:relative ;
+	background:#FFF ;
+	box-sizing:border-box;
+	
+	position:relative ;
+	}
+#banner::before{
+	content:"";
+	background:url(../../images/banner-top.png) no-repeat  ;
+	background-size: 100% 100%;
+	display:block ;
+	width:101%;
+	height:57px;
+	position:absolute ;
+	top:-57px;
+	left:-6px ;	
+	}
+	
+/*#banner::after{
+	content:"";
+	background:url(../../images/banner-bottom.png) no-repeat  ;
+	display:block ;
+	width:960px;
+	height:57px;
+	position:absolute ;
+	bottom:-57px;
+	left:-6px ;	
+	}	
+	*/
+	
+#banner-inner{
+	width:100% ;
+	margin:18px 0 ;
+	background:#999 ;
+
+	
+	}
+	
+#banner-tran{
+	width:61px;
+	height:38px;
+	position:absolute ;
+	bottom:-91px ;
+	left:50% ;
+	margin-left:-31px;
+	}	
+#banner-tran:hover{
+	bottom:-100px ;
+	transition:.3s ;
+	}
+	
+#banner-tran-a{
+	display:block ;
+	text-indent:-9999px ;
+	width:100% ;
+	height:100% ;
+	background:url(../../images/banner-tran.png) no-repeat  ;
+	}	
+	
+	
+/* Download------------------------------------------------------*/	
+
+#download{
+	position:relative ;
+	margin: 80px auto ;
+	width:75%;
+	height:133px;
+	margin-bottom:130px ;
+	}	
+#download-button{
+	width:40%;
+	height:auto ;
+	position:absolute ;
+	top:-13px;
+	left:50% ;
+	margin-left:-20%;
+	
+	}
+#download-button-app{
+	width:28%;
+	height:auto ;
+	float:left ;
+	}
+#download-button-play{
+	width:28%;
+	height:auto ;
+	float:right ;
+	}
+
+#download-button-a img,#download-button-app-a img,#download-button-play-a img{
+	width:100%;
+	height:auto ;
+	}
+	
+#download-button-a{
+	margin:auto ;	
+	
+	}	
+#download-button-app-a{
+	float:left ;
+	}
+#download-button-play-a{
+	float:right ;
+	}
+/* Download狀態設定------------------*/	
+#download-button-app:hover,#download-button-play:hover{
+	margin-top:20px;
+	transition:.3s ;
+	}
+
+/* Download over------------------------------------------------------*/	
+/* footer------------------------------------------------------*/	
+
+#footer{
+	position:relative ;
+	width:100% ;
+	height:128px;
+	background:#20486d;
+	color:#FFF ;
+	clear:both;
+	}
+#footer:after{/*版權宣告*/
+	content:"© 2014 CUTYLALA  Limited. All Rights Reserved.";
+	background:#15324c;
+	color:#FFF ;
+	line-height:37px;
+	text-align:center ;
+	font-family:Arial, Helvetica, sans-serif ;
+	font-size:10pt;
+	letter-spacing:3px;
+	width:100%;
+	position:relative ;
+	display:block ;
+	/*box-shadow:0 1px 10px 1px #000 inset ;*/
+	}			
+	
+
+
+
+
+#footer #footer-inner{
+	position:relative ;
+	width:960px;
+	height:128px;
+	margin:auto ;
+	text-align:center;
+	background:#20486d;
+
+	}
+#footer-inner:before{  /*輪胎*/
+	content:"";
+	background:url(../../images/footer.png) no-repeat  ;
+	width:431px;
+	height:184px;
+	position:absolute ;
+	left:-120px;
+	top:-183px;
+	}
+	
+#footer-inner #footer-logo{
+	position:absolute ;
+	left:0px;
+	top:-150px;	
+	width:219px;
+	height:218px;
+	border-radius:100%;
+	/*box-shadow:0 1px 10px 1px #000 inset ;*/
+	display:block ;
+	background:#274c6f;
+	
+}
+
+#footer-inner #footer-logo::after{
+	content:"";
+	background:url(../../images/cutylala.png) no-repeat; 
+	width:158px;
+	height:50px;
+	display:block ;
+	position:absolute ;
+	bottom:-50px;
+	left:15%;
+	}
+
+
+			
+#footer-inner .footer-p{
+	position:absolute ;
+	top:40%;
+	width:100% ;
+	letter-spacing:2px;
+	font-size:10pt;
+	}
+	
+#footer-inner .footer-p a{
+	color:#FFF ;
+	}			
+/* footer 收尾資訊------------------------------------------------------*/		
+a#fb ,
+a#go ,
+a#tw {
+	height:29px ;
+	width:29px;
+	overflow: hidden;
+	text-indent: -9999px;
+	z-index: 40;
+	display:inline-block ;
+	
+	box-shadow:1px 1px 5px 1px #333;
+	-moz-shadow:1px 1px 5px 1px #333;
+	-webkit-shadow:1px 1px 5px 1px #333;
+	 behavior:url(../ie/PIE.htc);
+	}
+	
+a#fb{
+	background:url(../../images/bottom-fb.png) no-repeat  ;
+	left:0 ;	
+	}
+a#go{
+	background:url(../../images/bottom-google.png) no-repeat  ;	
+	left:35px;
+	}
+a#tw{
+	background:url(../../images/bottom-twitter.png) no-repeat  ;	
+	left:70px;
+	}						
+			
+.level{
+	background:url(../../images/footer-level.png) no-repeat  ;
+	width:78px;
+	height:77px;
+	float:right ;
+	position:relative ;
+	font-size:8pt;
+	line-height:15px;
+	font-family:"微軟正黑體", "新細明體-ExtB", "Arial Unicode MS" ;
+	margin-top:12px;
+	
+	}
+	
+.level::after{
+	content:"本遊戲部分內容需額外支付費用" ;
+	width:85px;
+	position:absolute ;
+	bottom:-33px ;
+	left:-4px;
+	display:block ;	
+	}	
+	
+/* footer 收尾資訊over------------------------------------------------------*/			
+
+
+/* 奇樂寶寶幻燈片------------------------------------------------------*/	
+.slide{
+		width: 150px;
+		height: 150px;
+		position: absolute; 
+		left: 0 ;
+		right: 0 ;
+		top: 0;
+		bottom: 0;
+		margin: auto ;
+		overflow:hidden;
+	
+	}
+	.slide ul{
+		width: 1000px;
+		height: 100%;
+		position: relative;
+		-webkit-animation:hola 17s infinite alternate;
+		animation:hola 17s infinite alternate;
+	}
+
+	.slide .slide-list {
+		width: 150px;
+		height:150px ;
+		float: left ;
+	}
+	.slide-list:nth-child(1){
+		background:url(../../images/qyropa/forSlide/qyropa_01.png) no-repeat center ;
+	}
+	.slide-list:nth-child(2){
+		background:url(../../images/qyropa/forSlide/qyropa_02.png) no-repeat center ;
+	}	
+	.slide-list:nth-child(3){
+		background:url(../../images/qyropa/forSlide/qyropa_03.png) no-repeat center ;
+	}
+	.slide-list:nth-child(4){
+		background:url(../../images/qyropa/forSlide/qyropa_04.png) no-repeat center ;
+	}
+	.slide-list:nth-child(5){
+		background:url(../../images/qyropa/forSlide/qyropa_05.png) no-repeat center ;
+	}
+	.slide-list:nth-child(6){
+		background:url(../../images/qyropa/forSlide/qyropa_06.png) no-repeat center ;
+	}					
+
+	@-webkit-keyframes hola{
+		0%{left:0px;}
+		12%{left:0px;}
+		17%{left:-150px;}
+		39%{left:-150px;}
+		44%{left:-300px;}
+		56%{left:-300px;}
+		61%{left:-450px;}
+		73%{left:-450px;}
+		78%{left:-600px;}
+		90%{left:-600px;}
+		95%{left:-750px;}
+		100%{left:-750px;}
+	}
+	@keyframes hola{
+		0%{left:0px;}
+		12%{left:0px;}
+		17%{left:-150px;}
+		39%{left:-150px;}
+		44%{left:-300px;}
+		56%{left:-300px;}
+		61%{left:-450px;}
+		73%{left:-450px;}
+		78%{left:-600px;}
+		90%{left:-600px;}
+		95%{left:-750px;}
+		100%{left:-750px;}
+	} 
+
+		
+		
+	
+	
+/*****scroll bar for chrome & safari*****/
+.colum-blue-inner-img::-webkit-scrollbar{
+	background-color:#DAEFFC;
+	height:10px;
+}
+.colum-blue-inner-img::-webkit-scrollbar-thumb{
+	background-color:#6acdd9;
+}
+
+
+		

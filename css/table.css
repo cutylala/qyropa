@@ -1,0 +1,460 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("table/table-box.css");
+@import url("table/table-decorative.css");
+@import url("table/table-style.css");
+
+
+/* index首頁-------------------------------------------------------------------- */
+
+.h1ForIndex{
+	 background:url(../images/h1-home2.png)center no-repeat ;
+	 height:101px; 
+	}
+
+.news{
+/*	background-image:url(images/cate.png);*/
+    background-position: 0 -102px;
+    background-repeat: no-repeat;
+	zoom:1;
+	margin:0 0 10px 0;
+	display:block;
+	width:100%;
+	font-size:10pt;
+	text-overflow: ellipsis;
+	}
+	
+.news-ul{
+	padding-top:20px;
+	
+	}		
+.news a{
+	display:inline-block;
+	width:60%;
+	margin:0 0 0 5px;
+	padding:0;
+	vertical-align:middle ;
+	color:#006 ;
+	text-overflow: ellipsis;
+	}		
+	
+.news .date{
+	display:inline-block ;
+	text-align:right ;
+	color:#999 ;	
+	}
+	
+.news .item{
+	line-height:32px;
+	background:url(../images/news-item-bg.png) no-repeat center center ;
+	display:inline-block ;
+	height:32px;
+	width:60px;
+	font-weight:bold ;
+	text-align:center;
+	text-shadow: 2px 2px 0px #fff, 1px 1px 0px #fff, 1px 1px 1px #fff,-1px -1px 0px #fff,1px -1px 0px #fff,-1px 1px 0px #fff, 1px 0px 1px #fff,0px 1px 1px #fff,-1px 0px 1px #fff,0px -1px 0px #fff;
+	}
+
+
+
+.blackboardForIndex{
+	/*width:65%; */
+	overflow:hidden;
+	}
+
+.memo2ForIndex{
+	margin: 20px 5% 0 5%;
+	}
+
+
+/* 遊戲icon------------------------------------------------------*/
+	
+.memo-icon{
+	width:18%;
+	height:auto ;
+	display:inline-block ;
+	}
+	
+.memo-icon-img{
+	width:100% ;
+	}	
+	
+.memoForIndex{
+	 background:#a6e3ea;
+	 padding:2% ;
+	 box-sizing:border-box ;
+	}		
+.memoForIndex p{
+	margin-left:10px;
+	display:inline-block ;
+	width:20%;
+	height:110px;
+	vertical-align:top;
+	border-left:1px #fff dotted ;
+	padding-left:5px;
+}
+
+.hr{ 
+	 text-indent:-9999px;
+	 display:inline-block ;
+
+	 }	
+	
+	
+/* shop商城-------------------------------------------------------------------- */	
+
+.bdForShop{
+	margin:auto ;
+	width:90%;
+	background:#FFF ; 
+	padding:20px; 
+	border-radius:15px;
+	box-sizing:border-box;
+	/*display:none;*/
+	}
+.memoForShop{
+	width:90% ; 
+	margin:auto;
+	box-sizing:border-box;
+	}
+
+
+
+	
+.typeOfGoods{
+	position:relative;
+	border-bottom:#5fcad6 dotted 1px ;
+	width:100%;
+	clear:both;
+	}	
+	
+	
+.typeOfGoods li:nth-child(1){
+	display:inline-block ; width:70% ;
+	}	
+.typeOfGoods li:nth-child(2){
+	display:inline-block ; width:20% ;
+	text-align:right ;
+	font-size:10pt;
+	}	
+	
+	
+.goods{
+	position:relative ;
+	width:100%;
+	margin-bottom:50px;
+	clear:both ;
+	}
+.goods ul{
+	text-align:center;	
+	}
+.goods ul li{
+	float:left ;	
+	font-size:11pt ;
+	text-align:center;
+	margin:2% 4% 2% 4%;
+	width:100%;
+	}				
+.goods ul li p{
+	line-height: 14pt;
+	font-size: 10pt;
+	font-family: "微軟正黑體", "新細明體", "Arial Unicode MS";
+	color:#09F ;
+	}
+h4 a{
+	color:#FFF ;
+	}
+	
+.buy-this{
+	height:39px ;
+	display:block ;
+	visibility:hidden;
+	padding:0 0 10px 0px ;
+	overflow: hidden;
+	text-indent: -9999px;
+	z-index: 81;
+	background:url(../images/goods/buy-this.png) center #FFF no-repeat ;	
+	}
+.goods ul li:hover .buy-this{
+	visibility:visible;
+	}	
+
+/*選項*/
+.select{
+	width:100% ;
+	list-style-type:none ;
+	margin:0 ;
+	padding:0 ;
+	box-sizing:border-box;
+
+	}
+
+.select h3{
+/*	background:#609;*/
+	color:#FFF ;
+	display:inline-block ;
+	width:15% ;
+	padding:0;
+	margin:0 ;
+	height:30px;
+	display:inline-block ;
+	vertical-align:middle ;
+	box-sizing:border-box;
+	}
+.select li{
+	width:100%;
+	height:30px;
+	margin-bottom:20px;
+	box-sizing:border-box;
+	}		
+.select li ul{
+	width:84% ;
+	clear:both ;
+	height:30px;
+	display:inline-block ;
+	background:#0FF ;
+	
+	}		
+.select li ul li{
+	display:inline-block ;
+	width:75px;
+	clear:both ;
+	
+
+	}
+
+.select ul li:hover{
+	background:#0FF;
+	border-radius:25px;
+	
+	}
+
+
+/* Qyropa奇樂寶寶們-------------------------------------------------------------------- */	
+
+/* 會動的奇樂寶 麻糬種 */
+.TypeOfQyropa .qyropaOfpf1 , .qyropaOfpf2, .qyropaOfpf3{
+	width:140px;
+	height:200px;
+	text-indent:20px;
+	display:inline-block;
+	color:#e9fff9;
+	text-align:center ;
+	margin-top:-20px;
+	text-indent:-9999px;
+	
+	}
+.TypeOfQyropa .qyropaOfpf1{
+	background:url(../images/animation/qyropaGo01.png) -1120px  0  ;
+	}
+.TypeOfQyropa .qyropaOfpf2{
+	background:url(../images/animation/qyropaGo02.png) -1120px  0  ;
+	}
+.TypeOfQyropa .qyropaOfpf3{
+	background:url(../images/animation/qyropaGo03.png) -1120px  0  ;
+	}	
+		
+	
+.TypeOfQyropa ul li:hover .qyropaOfpf1, 
+.TypeOfQyropa ul li:hover .qyropaOfpf2,
+.TypeOfQyropa ul li:hover .qyropaOfpf3{
+	-webkit-animation:qyropaGo01 2s steps(8) infinite ;
+	animation:qyropaOfpf1 .5s steps(2) infinite ;
+	}		
+	
+@-webkit-keyframes qyropaOfpf1{
+	from{ background-position:0 0 ;}
+	to{ background-position:1120px 0) ;}
+	}	
+
+@keyframes qyropaOfpf1{
+	from{ background-position:0 0 ;}
+	to{ background-position:1120px  0) ;}
+	}	
+
+/* 奇樂寶寶們 */
+
+.TypeOfQyropa{
+	margin-bottom:10%;
+	}	
+
+.TypeOfQyropa ul {
+	list-style:none ;
+	padding:0 ;
+	margin:auto;
+	position:relative;
+	width:90%;
+	overflow-x:hidden;
+	}	
+.TypeOfQyropa ul li{
+	padding:5% ;
+	margin:auto ;
+	float:left ;
+	text-align:center ;
+	width:40%;
+	}
+					
+
+
+/* 寶寶描述 */
+	
+.TypeOfQyropa .Qyropa-relation{
+	width:100% ;
+	height:50px;
+	line-height:15pt ;
+	font-size:10pt ;
+	color:#666 ;
+	position:relative;
+	background:#fff;
+	font-family: "微軟正黑體", "新細明體", "Arial Unicode MS" ;
+	border-top:1px #6acdd9 dotted;
+	border-radius:0 0 25px 25px;
+	box-sizing:border-box ;
+	}	
+
+.photo{
+	background:#e9fff9;
+	width:100%;
+	height:210px;
+	text-align:center;
+	overflow:hidden ;
+	border-radius:50px 50px 0 0 ;
+	}
+	
+	
+	
+/*.TypeOfQyropa ul li:hover .photo img{
+	transition:All 0.001s linear;
+	-webkit-transition:All 0.100s linear;
+	-moz-transition:All 0.100s linear;
+	-o-transition:All 0.100s linear;
+	transform: scale(1.2) ;
+	-webkit-transform: scale(1.5) ;
+	-moz-transform:  scale(1.5);
+	-o-transform:scale(1.5);
+	-ms-transform:  scale(1.5);
+	}	*/
+
+.photo:hover{
+	overflow:visible;
+	}
+
+.TypeOfQyropa a{
+	color:#666 ;
+	}
+
+
+
+
+
+/* FAQ問與答-------------------------------------------------------------------- */	
+
+
+.faq{
+	padding:20px ;
+	margin: auto ;
+	line-height:18pt ;
+	width:90%;
+	}
+
+.menu a{
+	text-decoration:none; 
+	color:#609;
+	display:block ;
+	}
+.menu a:hover{
+	 background:#88d5df;
+	 border-radius:30px ;
+	}
+.menu li{
+	margin-top:10px;
+	}
+		
+.menu-ul{
+	box-sizing:border-box ;
+	padding:20px ;
+	margin:10px 0 40px 0 ; 
+	background:#f2fffb ;
+	line-height:18pt ;
+	border-radius:10px;
+	}
+	
+.menu ul li ul{
+	list-style-type: none;
+	color:#666;
+	}		
+
+.submenu{
+	display:none;
+	}
+
+.submenu{
+	border-radius:0  0 25px 25px;
+	padding:10px;
+	background:#fff ;
+	border-top:1px dotted #aef0f8  ;
+	list-style-type:disc; 
+	color:#333333; 
+	margin-top:5px;
+	font-size:11pt;
+	}	
+	
+.contactltem{
+	height:100% ;
+	width:90% ;
+	margin:auto ;
+	margin-bottom:10px;
+	position:relative ;
+	word-wrap: break-word;
+	font-size:10pt ;
+	}
+	
+	
+	
+.controlHolder{
+	margin-bottom: 10px;
+	padding-bottom: 1px;
+	clear: both;	
+	}	
+.label{
+	width:20%;
+	display: inline-block;
+	zoom: 1;
+	vertical-align: top;
+	padding: 3px 0 3px 0;
+	margin-right: 20px;
+	text-align:right ;
+}
+.label::before{
+	content:"";
+	height:auto ;
+	width:2px;
+	border-left:#099 dotted 1px;
+	position:absolute ;
+	left:22%;
+	height:20px;
+	}
+		
+.verticalSeparator{
+	margin-left: -1px;
+	float: left;
+	height: 2px;
+	width: 1px;
+	border-right: 1px dotted #09C;
+	margin: 0 0px -2000px;
+	padding-bottom: 2000px;
+	position: relative;
+	left: 180px;
+	zoom: 1;
+	}	
+.required{
+	height: auto;
+	width: 70%;
+	display: inline-block;
+	zoom: 1;
+	vertical-align: top;
+	margin: 0 0 0 20px;
+	
+	}		
+		

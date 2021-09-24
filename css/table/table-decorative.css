@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* 背景裝飾設定------------------------------------------------------*/		
+
+.body-bg-stars{  /*星星*/
+/*	background:url(../../images/dec-stars.png) repeat-x  ;
+	width:100% ;
+	height:237px;
+	position:fixed;
+	z-index:-49;
+	left:0;*/
+}
+
+	
+@keyframes stars-shine{
+	from{ opacity:0.2 ;}
+	100%{ opacity:0.8; }
+	}
+@-webkit-keyframes stars-shine{
+	from{ opacity:0.2 ;}
+	100%{ opacity:0.8; }
+	}	
+
+
+
+/* 標題系列------------------------------------------------------*/	
+
+
+h1{
+	text-indent:-9999px ;
+	margin-bottom:30px;
+	
+	}
+
+h2{
+	text-indent:-9999px ;
+	height:40px;
+	line-height:40px;
+	background-repeat:no-repeat;
+	background-position:left center;
+	
+	}
+
+.h2-bg{
+	/*background:url(../../images/h2-bg.png) no-repeat ;*/
+	margin: 30px 6% 40px  6% ;
+	height:40px;
+	display:block ;
+	background:#4c2c5e ;
+	border-radius:25px;
+	
+	}	
+	
+h3{
+	font-weight:bold ;
+	margin-bottom:10px;
+	font-family:"微軟正黑體", "新細明體-ExtB", "Arial Unicode MS" ;
+	text-shadow: 2px 2px 0px #000, 1px 1px 0px #000, 1px 1px 1px #000,-1px -1px 0px #000,1px -1px 0px #000,-1px 1px 0px #000, 1px 0px 1px #000,0px 1px 1px #000,-1px 0px 1px #000,0px -1px 0px #000;
+
+	
+	}
+	
+h4{
+	color:#FFF ;
+	text-shadow: 2px 2px 0px #000, 1px 1px 0px #000, 1px 1px 1px #000,-1px -1px 0px #000,1px -1px 0px #000,-1px 1px 0px #000, 1px 0px 1px #000,0px 1px 1px #000,-1px 0px 1px #000,0px -1px 0px #000;
+
+	}		
+	
+.h-dec01{
+	background:url(../../images/colum-dec.png) no-repeat  ;
+	width:141px ;
+	height:165px ;
+	position:absolute ;
+	right:23px;
+	top:-166px ;
+	}	
+
+
+
+
+/* 跑龍套裝飾------------------------------------------------------*/	
+
+.dec-flower{
+	height:auto;
+	position:relative ;
+
+	width:40% ; 
+	top:20px;
+	}
+.dec-flower img{
+	width:100% ;
+	height:auto ;
+	
+	}	
+		
+	
+.dec-cloud{
+	background:url(../../images/dec-cloud.png) no-repeat  ;
+	width:207px;
+	height:136px;
+	position:absolute ;
+	z-index:-50;
+	display:none ;
+	
+	}	
+	
+@keyframes cloud{
+	from{ transform:translateX(0) ;}
+	100%{ transform:translateX(50px) ;}
+	}
+@keyframes cloud2{
+	from{ transform:translateX(50px) ;}
+	100%{ transform:translateX(0) ;}
+	}
+	
+@-webkit-keyframes cloud{
+	from{ transform:translateX(0) ;}
+	100%{ transform:translateX(50px) ;}
+	}
+@-webkit-keyframes cloud2{
+	from{ transform:translateX(50px) ;}
+	100%{ transform:translateX(0) ;}
+	}			
+	
+.freze-qyropa{
+	position:absolute ;
+	display:block ;
+	background:url(../../images/qyropa/qyropa_01.png) no-repeat ;
+	width:180px;
+	height:180px;
+	z-index:40;
+	text-indent:-9999px;
+	display:none ;
+	}	
+	
+/* 奇樂寶走動----------------------------------------------------麻糬種--*/	
+
+
+.dec-qyropaGo01{
+	background:url(../../images/animation/qyropaGo01.png) -1120px  0  ;
+	width:140px;
+	height:200px;
+	-webkit-animation:qyropaGo01 2s steps(8) infinite ,qyropaGo02 10s   infinite linear;
+	animation:qyropaGo01 2s steps(8) infinite ,qyropaGo02 10s 0 infinite linear;
+	animation-timing-function:linea;
+
+
+	
+	}
+	
+@-webkit-keyframes qyropaGo01{
+	from{ background-position:0 0 ;}
+	to{ background-position:1120px 0) ;}
+	}	
+@-webkit-keyframes qyropaGo02{
+	from{ transform:translateX(0) ; }
+	to{ transform:translateX(960px) ;
+	      }
+	}
+	
+@keyframes qyropaGo01{
+	from{ background-position:0 0 ;}
+	to{ background-position:1120px  0) ;}
+	}	
+@keyframes qyropaGo02{
+	from{ transform:translateX(0) ;}
+	to{ transform:translateX(960px) ;}
+	}
+
+/* 奇樂寶走動----------------------------------------------------棉花糖種top--*/	
+.dec-qyropaGo02-top{
+	background:url(../../images/animation/qyropaGo02-top.png) -1120px  0  ;
+	width:140px;
+	height:200px;
+	position:fixed ;
+	right:0;
+	bottom:180px;
+	z-index:49;
+	display:block ;
+	text-indent:-9999px;
+	-webkit-animation:qyropaGo02-top 2s steps(8) infinite alternate;
+	animation:qyropaGo02-top 2s steps(8) infinite alternate;
+	animation-timing-function:linea;
+	-webkit-animation-timing-function:linea;
+	transform:scale(0.8) ;
+	display:none ;
+	}
+
+.dec-qyropaGo02-top:hover{
+	transform:scale(1) ;
+	transition:.8s;
+	
+	}	
+	
+@-webkit-keyframes qyropaGo02-top{
+	from{ background-position:0 0 ;}
+	to{ background-position:840px 0) ;}
+	}	
+	
+@keyframes qyropaGo02-top{
+	from{ background-position:0 0 ;}
+	to{ background-position:840px  0) ;}
+	}	
+
+
+/* 奇樂寶走動----------------------------------------------------御飯糰種--*/	
+
+
+.dec-qyropaGo03{
+	display:block ;
+	text-indent:-9999px;
+	background:url(../../images/animation/qyropaGo03.png) -1120px  0  ;
+	width:140px;
+	height:200px;
+	-webkit-animation:qyropaGo03 2s steps(8) infinite alternate/* ,qyropaGo03-go 8s 0   infinite alternate linear*/;
+	animation:qyropaGo03 2s steps(8) infinite alternate /*,qyropaGo03-go 8s 0 infinite alternate linear*/;
+	
+	
+	
+	}
+	
+@-webkit-keyframes qyropaGo03{
+	from{ background-position:0 0 ;}
+	to{ background-position:1120px 0) ;}
+	}	
+@-webkit-keyframes qyropaGo03-go{
+	from{ transform:translateX(820px) ; }
+	to{ transform:translateX(0px) ;
+	      }
+	}
+	
+@keyframes qyropaGo03{
+	from{ background-position:0 0 ;}
+	to{ background-position:1120px  0) ;}
+	}	
+@keyframes qyropaGo03-go{
+	from{ transform:translateX(820px) ;}
+	to{ transform:translateX(0px) ;}
+	}
+
+
+		
+/* 奇樂寶寶大型裝飾------------------------------------------------------*/	
+	
+		
+.dec-01{
+	width:80%;
+	height:auto;
+	position:absolute ;
+	bottom:-500px ;
+	right:0px;
+	z-index:5;
+	}
+				
+.dec-01 img{
+	width:100% ;
+	height:auto ;
+	
+	}		
+
